@@ -22,11 +22,7 @@
   </ul>
 </div>
   <div class="row">
-    <div class="col-md-4">
-      <h2>Historia</h2>
-      <p>A principios de 1971, el entonces Subdirector del ITC, el Ing. Manuel Placencia propuso el slogan: “Con la Técnica al Progreso”.</p>
-    
-    </div>
+    $results = DB::select('select * from alumnos',[3]);
   </div>
   <div class="row">
   <footer class="col-md-4">
