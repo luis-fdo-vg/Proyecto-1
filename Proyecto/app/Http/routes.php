@@ -11,11 +11,16 @@
 |
 */
 Route::get('/', 'WelcomeController@index');
+Route::get('materia', 'WelcomeController@Materia');
+Route::get('index', 'WelcomeController@index');
+Route::get('grupos/{id}', 'WelcomeController@Grupos');
+//Route::get('home', 'HomeController@index');
 
-Route::get('home', 'HomeController@index');
 
 
-
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+/*Route::get('/', function () {
+    $alumnos = DB::table('alumnos')->where('id_alumno','=','1')->get();
+    //get(); --regresa Todo
+    return $alumnos;
+    
+});*/

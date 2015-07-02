@@ -15,11 +15,18 @@
   </div>
  <div class="col-md-3">
   <ul class="nav nav-pills nav-stacked">
-    <li class="active"><a href="materia">Materias</a></li>
+    <li class="active"><a href="index">Materias</a></li>
+      @foreach($mates as $mate)
+        <li><a href="grupos/{{$mate->id_materias}}">{{$mate->nombre}}</a></li>
+        @endforeach
   </ul>
 </div>
-  <div class="row">
+  <div>
+    @yield("muestra")
+
     
+
+
   </div>
   <div class="row">
   <footer class="col-md-4">
