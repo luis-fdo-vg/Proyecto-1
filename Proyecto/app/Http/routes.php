@@ -11,7 +11,8 @@
 |
 */
 Route::get('/', 'WelcomeController@index');
-
+Route::get('proyecto-1/proyecto/public/materia', 'WelcomeController@Materia');
+Route::get('proyecto-1/proyecto/public/index', 'WelcomeController@index');
 //Route::get('home', 'HomeController@index');
 
 
