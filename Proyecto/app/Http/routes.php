@@ -11,8 +11,9 @@
 |
 */
 Route::get('/', 'WelcomeController@index');
-Route::get('proyecto-1/proyecto/public/materia', 'WelcomeController@Materia');
-Route::get('proyecto-1/proyecto/public/index', 'WelcomeController@index');
+Route::get('proyecto-1/Proyecto/public/materia', 'WelcomeController@Materia');
+Route::get('proyecto-1/Proyecto/public/index', 'WelcomeController@index');
+Route::get('proyecto-1/Proyecto/public/grupos/{id}', 'WelcomeController@Grupos');
 //Route::get('home', 'HomeController@index');
 
 

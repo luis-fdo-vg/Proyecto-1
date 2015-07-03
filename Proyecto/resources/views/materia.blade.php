@@ -16,25 +16,17 @@
  <div class="col-md-3">
   <ul class="nav nav-pills nav-stacked">
     <li class="active"><a href="index">Materias</a></li>
-    <?php 
-        $mate1 = DB::table('materias')->select('nombre')->where('id_materias','=','1')->get();
-
-        echo "<li>";  
-        echo "<a href=#>"; 
-        echo var_dump($mate1);
-        echo "</a>";   
-        echo "</li>";
-
-
-
-
-    ?>
-    <li><a href="#"><materia2></a></li>
-    <li><a href="#"><materia3></a></li>
+      @foreach($mates as $mate)
+        <li><a href="grupos/{{$mate->id_materias}}">{{$mate->nombre}}</a></li>
+        @endforeach
   </ul>
 </div>
   <div>
+    @yield("muestra")
+
     
+
+
   </div>
   <div class="row">
   <footer class="col-md-4">

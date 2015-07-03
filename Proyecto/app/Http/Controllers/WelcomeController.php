@@ -3,7 +3,8 @@
 use DB;
 use App\Http\Controllers\Controller;
 use App\Quotation;
-
+use App\Materia;
+use App\Grupos;
 
 class WelcomeController extends Controller {
 
@@ -19,14 +20,16 @@ class WelcomeController extends Controller {
 	}
 
 	public function materia(){
-		/*
-		$mate1 = DB::table('materias')->select('nombre')->where('id_materias','=','1')->get();
-		$mate2 = DB::table('materias')->select('nombre')->where('id_materias','=','2')->get();
-		$mate3 = DB::table('materias')->select('nombre')->where('id_materias','=','3')->get();
+		$mates=Materia::todamateria();
 
-		, ['materia1' => $mate1], ['materia2' => $mate2], ['materia3' => $mate3]
-*/
-		return view('materia');
+		return view('materia',compact("mates"));
+	}
+
+	public function Grupos($id){
+		$grupos = Grupos::Grupos($id);
+		$mates=Materia::todamateria();
+
+		return view('muestra',compact("grupos","mates"));
 	}
 
 }
