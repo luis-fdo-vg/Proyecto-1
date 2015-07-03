@@ -10,12 +10,12 @@
 <div class="container">
 
   <div class="jumbotron" >
-    <img src="logo2.jpg" style="width:500px;height:228px;">
+    <img src="logo2.jpg" style="width:1030px;height:145px;">
     <h2>Consultas</h2>
   </div>
  <div class="col-md-3">
   <ul class="nav nav-pills nav-stacked">
-    <li class="active"><a href="index">Materias</a></li>
+    <li class="active"><a href="..">Materias</a></li>
       @foreach($mates as $mate)
         <li><a href="grupos/{{$mate->id_materias}}">{{$mate->nombre}}</a></li>
         @endforeach

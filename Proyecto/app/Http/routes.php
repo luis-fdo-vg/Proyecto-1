@@ -12,8 +12,9 @@
 */
 Route::get('/', 'WelcomeController@index');
 Route::get('materia', 'WelcomeController@Materia');
-Route::get('index', 'WelcomeController@index');
+Route::get('proyecto-1/Proyecto/public/index', 'WelcomeController@index');
 Route::get('grupos/{id}', 'WelcomeController@Grupos');
+Route::get('grupos/pdf/{id}', 'PdfController@elPdf');
 //Route::get('home', 'HomeController@index');
 
 

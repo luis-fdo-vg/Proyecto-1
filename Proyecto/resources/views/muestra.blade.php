@@ -1,7 +1,7 @@
 @extends("materia")
 
 @section("muestra")
-  <table>
+  <table border="1" cellspacing="1" cellpadding="1">
     <tr>
       <th>Nombre Materia</th>
       <th>Grupo</th>
@@ -11,7 +11,7 @@
      @foreach($grupos as $grupo)
      <tr>
       <td>{{$grupo->nombre}}</td>
-      <td>{{$grupo->id_grupos}}</td>
+      <td><a href="pdf/{{$grupo->id_grupos}}">{{$grupo->id_grupos}}</a></td>
       <td>{{$grupo->maistro}}</td>
       <td>{{$grupo->nombre_aula}}</td>
      </tr>

@@ -10,7 +10,7 @@
 <div class="container">
 
   <div class="jumbotron" >
-    <img src="logo2.jpg" style="width:500px;height:228px;">
+    <img src="logo2.jpg" style="width:1030px;height:145px;">
     <h2>Consultas</h2>
   </div>
  <div class="col-md-3">

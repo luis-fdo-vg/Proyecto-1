@@ -6,6 +6,7 @@ use App\Quotation;
 use App\Materia;
 use App\Grupos;
 
+
 class WelcomeController extends Controller {
 
 	public function __construct()
@@ -31,5 +32,7 @@ class WelcomeController extends Controller {
 
 		return view('muestra',compact("grupos","mates"));
 	}
+
+	
 
 }
